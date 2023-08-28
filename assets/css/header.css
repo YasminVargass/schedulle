@@ -1,0 +1,15 @@
+ .link-logo .logo{
+    width: 50px;
+}
+
+.navbar-list{
+    list-style: none;
+}
+
+.navbar-list li a{
+color: #fff;
+text-decoration: none;
+}
+.navbar-list li a:hover{
+color: #fffdfdbb;
+}
