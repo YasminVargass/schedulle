@@ -1,5 +1,24 @@
-*{
+html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* HOME PAGE */
+
+.table thead th{
+    color: #fff;
+    background-color: #007bff;
+}
+.delete-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.check-icon{
+    color: #49c049;
+}
+
+.delete-icon{
+    color: red;
 }

@@ -1,21 +1,26 @@
-<?php 
-require_once './components/head.php';
-
-?>
 <html>
+
+<head>
+    <?php 
+require_once './components/head.php';
+?>
+    <title>Agenda</title>
+</head>
 
 <body>
     <?php
     require_once './components/header.php';
     ?>
-    <main>
+    <main class="container">
+
         <?php if (isset($printMsg) && $printMsg !== '') : ?>
         <p><?=$printMsg; ?></p>
         <?php endif; ?>
+
         <h1 class="text-center mt-4">Minha agenda</h1>
         <?php if (count($contacts) > 0) : ?>
 
-        <table class="table">
+        <table class="table mt-4">
             <thead>
                 <tr class="table-primary">
                     <th scope="col">#</th>
@@ -35,7 +40,7 @@ require_once './components/head.php';
                     <td class="actions">
                         <a href="#"><i class="far fa-eye check-icon"></i></a>
                         <a href="#"><i class="far fa-edit edit-icon"></i></a>
-                        <button type="submit"><i class="fas fa-times delete-icon"></i></button>
+                        <button class="delete-btn" type="submit"><i class="fas fa-times delete-icon"></i></button>
                     </td>
                 </tr>
                 <?php endforeach ; ?>
