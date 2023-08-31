@@ -13,6 +13,7 @@ require_once './components/head.php';
     require_once './components/header.php';
 ?>
 <main class="d-flex flex-column align-items-center">
+    <a class="btn btn-outline-primary" href="./index.php" role="button">Voltar</a>
     <h1 class="text-center mt-4">Criar Contato</h1>
     <form action="./data/contact.php" method="POST" class="d-flex flex-column">
         <label class="mb-1" for="name">Nome do contato:</label>
@@ -24,7 +25,7 @@ require_once './components/head.php';
         <label class="mb-1" for="observations">Observações</label>
         <textarea name="observations" id="observations" placeholder="Insira as observações" cols="30" rows="5" class="mb-2" required></textarea>
 
-        <button type="submit" value="enviar">Enviar</button>
+        <button type="submit" class="btn btn-primary" value="enviar">Enviar</button>
 
     </form>
 </main>

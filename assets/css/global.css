@@ -4,6 +4,9 @@ html{
     box-sizing: border-box;
 }
 
+.btn{
+    margin: 28px 0;
+}
 /* HOME PAGE */
 
 .table thead th{
@@ -17,8 +20,10 @@ html{
 
 .check-icon{
     color: #49c049;
+    margin-right: 5px;
 }
 
 .delete-icon{
     color: red;
 }
+

@@ -38,8 +38,8 @@ require_once './components/head.php';
 
                     <td scope="row"> <?= $contact['phone']; ?></td>
                     <td class="actions">
-                        <a href="#"><i class="far fa-eye check-icon"></i></a>
-                        <a href="#"><i class="far fa-edit edit-icon"></i></a>
+                        <a href="./show.php?id=<?= $contact['id']?>"><i class="far fa-eye check-icon"></i></a>
+                        <a href="./edit.php?id=<?= $contact['id']?>"><i class="far fa-edit edit-icon"></i></a>
                         <button class="delete-btn" type="submit"><i class="fas fa-times delete-icon"></i></button>
                     </td>
                 </tr>
