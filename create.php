@@ -13,7 +13,8 @@ require_once './components/head.php';
     require_once './components/header.php';
 ?>
 <main class="d-flex flex-column align-items-center">
-    <a class="btn btn-outline-primary" href="./index.php" role="button">Voltar</a>
+    <?php require_once './components/backbtn.php' ?>
+
     <h1 class="text-center mt-4">Criar Contato</h1>
     <form action="./data/contact.php" method="POST" class="d-flex flex-column">
         <label class="mb-1" for="name">Nome do contato:</label>

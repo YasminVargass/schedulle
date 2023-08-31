@@ -13,7 +13,8 @@ require_once './components/head.php';
     ?>
     <main>
         <section class="box-show text-start">
-            <a class="btn btn-outline-primary" href="./index.php" role="button">Voltar</a>
+            <?php require_once './components/backbtn.php' ?>
+
             <h1 class="text-center"><?= $contact['name']?></h1>
             <h4>Telefone:</h4>
             <p><?= $contact['phone'] ?></p>
