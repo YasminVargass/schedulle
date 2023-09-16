@@ -7,10 +7,12 @@ require_once './components/head.php';
     <title>Agenda</title>
 </head>
 
-<body>
+<body>    
+    <header>
     <?php
     require_once './components/header.php';
     ?>
+    </header>
     <main class="container">
 
         <?php if (isset($printMsg) && $printMsg !== '') : ?>
