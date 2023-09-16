@@ -8,9 +8,11 @@ require_once './components/head.php';
 </head>
 
 <body>
+    <header>
     <?php
     require_once './components/header.php';
     ?>
+    </header>
     <main class="d-flex flex-column align-items-center">
         <?php require_once './components/backbtn.php' ?>
         <form action="./data/inputEdit.php?id=<?= $contact['id'] ?>" method="POST" class="d-flex flex-column">
