@@ -8,9 +8,11 @@ require_once './components/head.php';
 <html>
 
 <body>
+    <header>
     <?php
     require_once './components/header.php';
     ?>
+    </header>
     <main>
         <section class="box-show text-start">
             <?php require_once './components/backbtn.php' ?>
