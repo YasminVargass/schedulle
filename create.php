@@ -8,10 +8,11 @@ require_once './components/head.php';
 </head>
 
 <html>
-
+     <header>
 <?php
     require_once './components/header.php';
 ?>
+ </header>
 <main class="d-flex flex-column align-items-center">
     <?php require_once './components/backbtn.php' ?>
 
