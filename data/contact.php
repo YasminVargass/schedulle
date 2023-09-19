@@ -12,6 +12,19 @@ $stmt = $conn->prepare("INSERT INTO contacts (name, phone, observations) VALUES 
 $stmt->bindParam(":nome", $nameInput);
 $stmt->bindParam(":phone", $phoneInput);
 $stmt->bindParam(":observations", $obsInput);
-$stmt->execute();
 
+try{
+
+$stmt->execute();
+$_SESSION['msg'] = "Contato criado com sucesso!";
+
+}catch(PDOException $e){
+
+    $error = $e->getMessage();
+    echo "Error: $error";
+
+}
+header("Location:" . "../index.php");
+
+$conn = null;
 ?>
