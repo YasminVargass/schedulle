@@ -1,17 +1,7 @@
 <?php
- session_start();
 
-require_once './connection.php';
+require_once './process.php';
 
-$table = 'contacts';
-
-$id;
-if(!empty($_GET)){
-
-    $id = $_GET['id'];
-  
-
-}
 
 
  if(!empty($id)){
@@ -30,8 +20,21 @@ if(!empty($_GET)){
  $stmt->bindParam(":observations", $observationsUpdated);
  $stmt->bindParam(":id", $id);
 
- $stmt->execute();
+
     
  }
+ try{
 
+    $stmt->execute();
+    $_SESSION['msg'] = "Contato editado com sucesso!";
+    
+    }catch(PDOException $e){
+    
+        $error = $e->getMessage();
+        echo "Error: $error";
+    
+    }
+    header("Location:" . "../index.php");
+    
+    $conn = null;
 ?>
